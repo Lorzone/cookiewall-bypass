@@ -1,0 +1,32 @@
+/*
+ * CookieWall Bypass - CSS
+ * Nasconde i banner prima che il JS venga eseguito
+ * per evitare il "flash" del banner
+ */
+
+/* OneTrust */
+#onetrust-consent-sdk,
+#onetrust-banner-sdk { opacity: 0 !important; pointer-events: none !important; }
+
+/* Cookiebot */
+#CybotCookiebotDialog,
+#CybotCookiebotDialogBodyUnderlay { opacity: 0 !important; }
+
+/* Didomi */
+#didomi-host,
+.didomi-popup-container { opacity: 0 !important; }
+
+/* iubenda */
+#iubenda-cs-banner,
+.iubenda-cs-container { opacity: 0 !important; }
+
+/* CookieYes */
+.cky-consent-container { opacity: 0 !important; }
+
+/* Overlay generici sospetti */
+[class*="cookie-wall"],
+[id*="cookie-wall"],
+[class*="cookiewall"],
+[id*="cookiewall"],
+[class*="consent-wall"],
+[id*="consent-wall"] { opacity: 0 !important; pointer-events: none !important; }
